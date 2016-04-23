@@ -1,0 +1,6 @@
+/home/pi/dev-domoticz/CMakeFiles/domoticz.dir
+/home/pi/dev-domoticz/CMakeFiles/domoticz_gch.dir
+/home/pi/dev-domoticz/lua/src/CMakeFiles/lua.dir
+/home/pi/dev-domoticz/MQTT/CMakeFiles/mqtt.dir
+/home/pi/dev-domoticz/CMakeFiles/revisiontag.dir
+/home/pi/dev-domoticz/sqlite/CMakeFiles/sqlite.dir
