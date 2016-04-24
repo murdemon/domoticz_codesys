@@ -297,6 +297,31 @@ void CCodesys::Do_Work()
 		int change_det;
 		float vals;
 		int  idx;
+		int  idx_sen;
+		std::string idx_sen_s = "80";
+		float newValue;
+
+		for (int j=0;j<16;j++) {
+			memcpy(&idx_sen, Act_Mem + 48 +j*64,2);
+			if (idx_sen != 0) {
+				std::vector<std::vector<std::string> > result;
+				char szTmp[100];
+				idx_sen_s = boost::lexical_cast<std::string>(idx_sen);
+				result = m_sql.safe_query("SELECT [Type],[SubType],[nValue],[sValue],[SwitchType] FROM DeviceStatus WHERE (ID=='%q')", idx_sen_s.c_str());
+				if (!result.empty())
+				{	std::vector<std::string> sd = result[0];
+					int devType = atoi(sd[0].c_str());
+					int subType = atoi(sd[1].c_str());
+					int nValue = atoi(sd[2].c_str());
+					std::string sValue = sd[3];
+					newValue = (float)atof(sValue.c_str());
+				_log.Log(LOG_NORM, "Codesys: Get sensor id %i val=%2.1f", idx_sen,newValue);
+				}
+				}
+			memcpy(pMemory + 50+j*64,&newValue,4);
+
+		}
+
                 for (int j=0;j<16;j++) {
 		change_det = 0;
                 for (int i=0;i<6;i++) {if (Old_Mem[(32+i)+64*j] != Act_Mem[(32+i)+64*j]) {change_det = 1;}}
@@ -365,8 +390,7 @@ bool CCodesys::Cmd_UpdateDevice(std::string idx_in, std::string svalue_in)
 			{
 				//Get the raw device parameters
 				std::vector<std::vector<std::string> > result;
-				result = m_sql.safe_query("SELECT HardwareID, DeviceID, Unit, Type, SubType FROM DeviceStatus WHERE (ID=='%q')",
-					idx.c_str());
+				result = m_sql.safe_query("SELECT HardwareID, DeviceID, Unit, Type, SubType FROM DeviceStatus WHERE (ID=='%q')",idx.c_str());
 				if (result.empty())
 					return false;
 				hid = result[0][0];

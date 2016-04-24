@@ -1,29 +1,40 @@
-2016-04-24 12:39:32.082 Always, OpenZwave Version 1.4.167 Starting Up
-2016-04-24 12:39:36.489 Error, Node005, ERROR: node presumed dead
-2016-04-24 12:39:36.489 Always, 
-2016-04-24 12:39:36.489 Always, Dumping queued log messages
-2016-04-24 12:39:36.490 Always, 
-2016-04-24 12:39:36.490 Always, 
-2016-04-24 12:39:36.490 Always, End of queued log message dump
-2016-04-24 12:39:36.490 Always, 
-2016-04-24 12:39:36.869 Error, Node006, ERROR: node presumed dead
-2016-04-24 12:39:36.869 Always, 
-2016-04-24 12:39:36.869 Always, Dumping queued log messages
-2016-04-24 12:39:36.869 Always, 
-2016-04-24 12:39:36.869 Always, 
-2016-04-24 12:39:36.869 Always, End of queued log message dump
-2016-04-24 12:39:36.869 Always, 
-2016-04-24 12:40:19.871 Error, Node005, WARNING: node revived
-2016-04-24 12:40:19.871 Always, 
-2016-04-24 12:40:19.871 Always, Dumping queued log messages
-2016-04-24 12:40:19.872 Always, 
-2016-04-24 12:40:19.872 Always, 
-2016-04-24 12:40:19.872 Always, End of queued log message dump
-2016-04-24 12:40:19.872 Always, 
-2016-04-24 12:40:30.472 Error, Node005, ERROR: Dropping command, expected response not received after 1 attempt(s)
-2016-04-24 12:40:30.472 Always, 
-2016-04-24 12:40:30.472 Always, Dumping queued log messages
-2016-04-24 12:40:30.472 Always, 
-2016-04-24 12:40:30.472 Always, 
-2016-04-24 12:40:30.472 Always, End of queued log message dump
-2016-04-24 12:40:30.472 Always, 
+2016-04-24 17:34:06.380 Always, OpenZwave Version 1.4.167 Starting Up
+2016-04-24 17:34:24.993 Error, Node005, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2016-04-24 17:34:24.993 Always, 
+2016-04-24 17:34:24.994 Always, Dumping queued log messages
+2016-04-24 17:34:24.994 Always, 
+2016-04-24 17:34:24.994 Always, 
+2016-04-24 17:34:24.994 Always, End of queued log message dump
+2016-04-24 17:34:24.995 Always, 
+2016-04-24 17:34:36.171 Error, Node005, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2016-04-24 17:34:36.171 Always, 
+2016-04-24 17:34:36.172 Always, Dumping queued log messages
+2016-04-24 17:34:36.172 Always, 
+2016-04-24 17:34:36.173 Always, 
+2016-04-24 17:34:36.173 Always, End of queued log message dump
+2016-04-24 17:34:36.174 Always, 
+2016-04-24 17:34:46.630 Error, Node005, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2016-04-24 17:34:46.631 Always, 
+2016-04-24 17:34:46.631 Always, Dumping queued log messages
+2016-04-24 17:34:46.631 Always, 
+2016-04-24 17:34:46.631 Always, 
+2016-04-24 17:34:46.632 Always, End of queued log message dump
+2016-04-24 17:34:46.632 Always, 
+2016-04-24 17:52:46.116 Always, ***************************************************************************
+2016-04-24 17:52:46.117 Always, *********************  Cumulative Network Statistics  *********************
+2016-04-24 17:52:46.117 Always, *** General
+2016-04-24 17:52:46.117 Always, Driver run time: . .  . 0 days, 0 hours, 18 minutes
+2016-04-24 17:52:46.117 Always, Frames processed: . . . . . . . . . . . . . . . . . . . . 93
+2016-04-24 17:52:46.117 Always, Total messages successfully received: . . . . . . . . . . 93
+2016-04-24 17:52:46.117 Always, Total Messages successfully sent: . . . . . . . . . . . . 35
+2016-04-24 17:52:46.117 Always, ACKs received from controller:  . . . . . . . . . . . . . 35
+2016-04-24 17:52:46.117 Always, *** Errors
+2016-04-24 17:52:46.117 Always, Unsolicited messages received while waiting for ACK:  . . 0
+2016-04-24 17:52:46.117 Always, Reads aborted due to timeouts:  . . . . . . . . . . . . . 0
+2016-04-24 17:52:46.117 Always, Bad checksum errors:  . . . . . . . . . . . . . . . . . . 0
+2016-04-24 17:52:46.117 Always, CANs received from controller:  . . . . . . . . . . . . . 0
+2016-04-24 17:52:46.117 Always, NAKs received from controller:  . . . . . . . . . . . . . 0
+2016-04-24 17:52:46.117 Always, Out of frame data flow errors:  . . . . . . . . . . . . . 0
+2016-04-24 17:52:46.117 Always, Messages retransmitted: . . . . . . . . . . . . . . . . . 0
+2016-04-24 17:52:46.117 Always, Messages dropped and not delivered: . . . . . . . . . . . 3
+2016-04-24 17:52:46.117 Always, ***************************************************************************
