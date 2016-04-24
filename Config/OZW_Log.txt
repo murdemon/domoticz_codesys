@@ -1,36 +1,29 @@
-2016-04-23 08:47:22.044 Always, OpenZwave Version 1.4.167 Starting Up
-2016-04-23 08:47:25.375 Error, Node005, ERROR: node presumed dead
-2016-04-23 08:47:25.376 Always, 
-2016-04-23 08:47:25.376 Always, Dumping queued log messages
-2016-04-23 08:47:25.376 Always, 
-2016-04-23 08:47:25.376 Always, 
-2016-04-23 08:47:25.376 Always, End of queued log message dump
-2016-04-23 08:47:25.376 Always, 
-2016-04-23 08:47:25.643 Error, Node006, ERROR: node presumed dead
-2016-04-23 08:47:25.643 Always, 
-2016-04-23 08:47:25.643 Always, Dumping queued log messages
-2016-04-23 08:47:25.643 Always, 
-2016-04-23 08:47:25.643 Always, 
-2016-04-23 08:47:25.643 Always, End of queued log message dump
-2016-04-23 08:47:25.643 Always, 
-2016-04-23 08:50:50.229 Error, Node005, WARNING: node revived
-2016-04-23 08:50:50.229 Always, 
-2016-04-23 08:50:50.230 Always, Dumping queued log messages
-2016-04-23 08:50:50.230 Always, 
-2016-04-23 08:50:50.230 Always, 
-2016-04-23 08:50:50.230 Always, End of queued log message dump
-2016-04-23 08:50:50.230 Always, 
-2016-04-23 08:51:00.676 Error, Node005, ERROR: Dropping command, expected response not received after 1 attempt(s)
-2016-04-23 08:51:00.676 Always, 
-2016-04-23 08:51:00.676 Always, Dumping queued log messages
-2016-04-23 08:51:00.676 Always, 
-2016-04-23 08:51:00.676 Always, 
-2016-04-23 08:51:00.676 Always, End of queued log message dump
-2016-04-23 08:51:00.676 Always, 
-2016-04-23 08:51:12.174 Error, Node005, ERROR: Dropping command, expected response not received after 1 attempt(s)
-2016-04-23 08:51:12.174 Always, 
-2016-04-23 08:51:12.174 Always, Dumping queued log messages
-2016-04-23 08:51:12.174 Always, 
-2016-04-23 08:51:12.174 Always, 
-2016-04-23 08:51:12.174 Always, End of queued log message dump
-2016-04-23 08:51:12.175 Always, 
+2016-04-24 12:39:32.082 Always, OpenZwave Version 1.4.167 Starting Up
+2016-04-24 12:39:36.489 Error, Node005, ERROR: node presumed dead
+2016-04-24 12:39:36.489 Always, 
+2016-04-24 12:39:36.489 Always, Dumping queued log messages
+2016-04-24 12:39:36.490 Always, 
+2016-04-24 12:39:36.490 Always, 
+2016-04-24 12:39:36.490 Always, End of queued log message dump
+2016-04-24 12:39:36.490 Always, 
+2016-04-24 12:39:36.869 Error, Node006, ERROR: node presumed dead
+2016-04-24 12:39:36.869 Always, 
+2016-04-24 12:39:36.869 Always, Dumping queued log messages
+2016-04-24 12:39:36.869 Always, 
+2016-04-24 12:39:36.869 Always, 
+2016-04-24 12:39:36.869 Always, End of queued log message dump
+2016-04-24 12:39:36.869 Always, 
+2016-04-24 12:40:19.871 Error, Node005, WARNING: node revived
+2016-04-24 12:40:19.871 Always, 
+2016-04-24 12:40:19.871 Always, Dumping queued log messages
+2016-04-24 12:40:19.872 Always, 
+2016-04-24 12:40:19.872 Always, 
+2016-04-24 12:40:19.872 Always, End of queued log message dump
+2016-04-24 12:40:19.872 Always, 
+2016-04-24 12:40:30.472 Error, Node005, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2016-04-24 12:40:30.472 Always, 
+2016-04-24 12:40:30.472 Always, Dumping queued log messages
+2016-04-24 12:40:30.472 Always, 
+2016-04-24 12:40:30.472 Always, 
+2016-04-24 12:40:30.472 Always, End of queued log message dump
+2016-04-24 12:40:30.472 Always, 

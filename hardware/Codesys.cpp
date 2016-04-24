@@ -11,6 +11,8 @@
 #ifndef WIN32
 	#include <wiringPi.h>
 #endif
+#include "boost/lexical_cast.hpp"
+#include "SQLHelper.h"
 #include "../main/Helper.h"
 #include "../main/Logger.h"
 #include "hardwaretypes.h"
@@ -289,7 +291,25 @@ void CCodesys::Do_Work()
 #else*/
 		mytime(&m_LastHeartbeat);
 	 	sleep_milliseconds(1000);
+		//Cmd_UpdateDevice("65","34");
 		memcpy(Act_Mem,pMemory,1024);
+
+		int change_det;
+		float vals;
+		int  idx;
+                for (int j=0;j<16;j++) {
+		change_det = 0;
+                for (int i=0;i<6;i++) {if (Old_Mem[(32+i)+64*j] != Act_Mem[(32+i)+64*j]) {change_det = 1;}}
+
+			if (change_det == 1) {  
+						memcpy(&idx , (Act_Mem + 32+64*j),2);
+						memcpy(&vals ,  (Act_Mem + 34+64*j),4);
+						_log.Log(LOG_NORM, "Codesys: Changing on AI %i detected = %2.1f ", idx,vals);
+						std::string idx_s = boost::lexical_cast<std::string>(idx);
+						std::string vals_s = boost::lexical_cast<std::string>(vals);
+						Cmd_UpdateDevice(idx_s,vals_s);
+					     }
+		       }
 
 		//_log.Log(LOG_NORM, "Codesys: val = %i",Act_Mem[16]);
 		for (int j=0;j<16;j++) {
@@ -306,11 +326,83 @@ void CCodesys::Do_Work()
    	shm_unlink("mymemory");
 }
 
+
+
+
+bool CCodesys::Cmd_UpdateDevice(std::string idx_in, std::string svalue_in)
+{
+			std::string idx = idx_in;
+			std::string hid = "";
+			std::string did = "";
+			std::string dunit = "";
+			std::string dtype = "";
+			std::string dsubtype = "";
+
+			std::string nvalue = "0";
+			std::string svalue = svalue_in;
+
+			if ((nvalue.empty() && svalue.empty()))
+			{
+				return false;
+			}
+
+			int signallevel = 12;
+			int batterylevel = 255;
+
+			if (idx.empty())
+			{
+				//No index supplied, check if raw parameters where supplied
+				if (
+					(hid.empty()) ||
+					(did.empty()) ||
+					(dunit.empty()) ||
+					(dtype.empty()) ||
+					(dsubtype.empty())
+					)
+					return false;
+			}
+			else
+			{
+				//Get the raw device parameters
+				std::vector<std::vector<std::string> > result;
+				result = m_sql.safe_query("SELECT HardwareID, DeviceID, Unit, Type, SubType FROM DeviceStatus WHERE (ID=='%q')",
+					idx.c_str());
+				if (result.empty())
+					return false;
+				hid = result[0][0];
+				did = result[0][1];
+				dunit = result[0][2];
+				dtype = result[0][3];
+				dsubtype = result[0][4];
+			}
+
+			int HardwareID = atoi(hid.c_str());
+			std::string DeviceID = did;
+			int unit = atoi(dunit.c_str());
+			int devType = atoi(dtype.c_str());
+			int subType = atoi(dsubtype.c_str());
+
+			std::stringstream sstr;
+
+			unsigned long long ulIdx;
+			sstr << idx;
+			sstr >> ulIdx;
+
+			int invalue = (!nvalue.empty()) ? atoi(nvalue.c_str()) : 0;
+
+
+			if (m_mainworker.UpdateDevice(HardwareID, DeviceID, unit, devType, subType, invalue, svalue, signallevel, batterylevel))
+			{
+				_log.Log(LOG_NORM, "Codesys: Update sensor done");
+			}
+return true;
+}
 /*
  * static
  * One-shot method to initialize pins
  *
  */
+
 bool CCodesys::InitPins()
 {
    char buf[128]={0};

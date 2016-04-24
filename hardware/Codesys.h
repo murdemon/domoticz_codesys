@@ -19,7 +19,7 @@ public:
 private:
 	bool StartHardware();
 	bool StopHardware();
-
+	bool Cmd_UpdateDevice(std::string idx_in, std::string svalue_in);
 	void Do_Work();
 	void ProcessInterrupt(int gpioId, int housecode);
 	

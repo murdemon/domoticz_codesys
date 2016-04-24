@@ -25,7 +25,7 @@
             <CommandClass id="48" name="COMMAND_CLASS_SENSOR_BINARY" version="1" request_flags="4" create_vars="false" innif="true">
                 <Instance index="1" />
                 <Value type="bool" genre="user" instance="1" index="0" label="Motion Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
-                <Value type="bool" genre="user" instance="1" index="1" label="Door/Window Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+                <Value type="bool" genre="user" instance="1" index="1" label="Door/Window Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
                 <Value type="bool" genre="user" instance="1" index="2" label="Tamper Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
                 <SensorMap index="2" type="8" />
                 <SensorMap index="1" type="10" />
@@ -33,8 +33,8 @@
             </CommandClass>
             <CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="5" innif="true">
                 <Instance index="1" />
-                <Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="F" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="76" />
-                <Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="1" />
+                <Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="F" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="77" />
+                <Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="95" />
             </CommandClass>
             <CommandClass id="112" name="COMMAND_CLASS_CONFIGURATION" version="1" request_flags="4" innif="true">
                 <Instance index="1" />
@@ -122,8 +122,8 @@
             </CommandClass>
             <CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="5" innif="true">
                 <Instance index="1" />
-                <Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="F" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="61" />
-                <Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="9" />
+                <Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="F" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="63" />
+                <Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="33" />
             </CommandClass>
             <CommandClass id="112" name="COMMAND_CLASS_CONFIGURATION" version="1" request_flags="4" innif="true">
                 <Instance index="1" />
@@ -220,13 +220,13 @@
                 <Instance index="1" />
                 <Value type="decimal" genre="user" instance="1" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.413" />
                 <Value type="decimal" genre="user" instance="1" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.413" />
-                <Value type="int" genre="user" instance="1" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="589" />
+                <Value type="int" genre="user" instance="1" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="10" />
                 <Value type="decimal" genre="user" instance="1" index="8" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
                 <Value type="decimal" genre="user" instance="1" index="9" label="Previous Reading" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
                 <Value type="int" genre="user" instance="1" index="10" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="40192" />
-                <Value type="decimal" genre="user" instance="1" index="16" label="Voltage" units="V" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="229.329" />
+                <Value type="decimal" genre="user" instance="1" index="16" label="Voltage" units="V" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="233.885" />
                 <Value type="decimal" genre="user" instance="1" index="17" label="Previous Reading" units="V" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
-                <Value type="int" genre="user" instance="1" index="18" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="40960" />
+                <Value type="int" genre="user" instance="1" index="18" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="512" />
                 <Value type="decimal" genre="user" instance="1" index="20" label="Current" units="A" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.007" />
                 <Value type="decimal" genre="user" instance="1" index="21" label="Previous Reading" units="A" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
                 <Value type="int" genre="user" instance="1" index="22" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="512" />
@@ -365,6 +365,229 @@
             <CommandClass id="135" name="COMMAND_CLASS_INDICATOR" version="1" request_flags="4" innif="true">
                 <Instance index="1" />
                 <Value type="byte" genre="user" instance="1" index="0" label="Indicator" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
+            </CommandClass>
+        </CommandClasses>
+    </Node>
+    <Node id="7" name="Panic Button" location="" basic="1" generic="1" specific="1" type="Portable Remote Controller" listening="false" frequentListening="false" beaming="true" routing="false" max_baud_rate="40000" version="3" query_stage="CacheLoad">
+        <Manufacturer id="86" name="Aeotec">
+            <Product type="1" id="26" name="Panic Button" />
+        </Manufacturer>
+        <CommandClasses>
+            <CommandClass id="43" name="COMMAND_CLASS_SCENE_ACTIVATION" version="1" request_flags="4" after_mark="true" innif="true">
+                <Instance index="1" />
+            </CommandClass>
+            <CommandClass id="112" name="COMMAND_CLASS_CONFIGURATION" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Value type="list" genre="config" instance="1" index="250" label="Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+                    <Help>Enable selective Group Mode or Scene Mode when the Panic Button is in Use mode</Help>
+                    <Item label="Group" value="0" />
+                    <Item label="Scene" value="1" />
+                </Value>
+                <Value type="button" genre="config" instance="1" index="255" label="Reset configuration" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0">
+                    <Help>Reset configuration set up to default setting</Help>
+                </Value>
+            </CommandClass>
+            <CommandClass id="114" name="COMMAND_CLASS_MANUFACTURER_SPECIFIC" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+            </CommandClass>
+            <CommandClass id="128" name="COMMAND_CLASS_BATTERY" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="94" />
+            </CommandClass>
+            <CommandClass id="132" name="COMMAND_CLASS_WAKE_UP" version="2" request_flags="2" innif="true">
+                <Instance index="1" />
+            </CommandClass>
+            <CommandClass id="133" name="COMMAND_CLASS_ASSOCIATION" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Associations num_groups="1">
+                    <Group index="1" max_associations="5" label="Lifeline" auto="true">
+                        <Node id="1" />
+                    </Group>
+                </Associations>
+            </CommandClass>
+            <CommandClass id="134" name="COMMAND_CLASS_VERSION" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Value type="string" genre="system" instance="1" index="0" label="Library Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="2" />
+                <Value type="string" genre="system" instance="1" index="1" label="Protocol Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="2.78" />
+                <Value type="string" genre="system" instance="1" index="2" label="Application Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="1.07" />
+            </CommandClass>
+        </CommandClasses>
+    </Node>
+    <Node id="8" name="Sensor_Storage_" location="" basic="4" generic="32" specific="1" type="Routing Binary Sensor" listening="false" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" query_stage="CacheLoad">
+        <Manufacturer id="13c" name="Philio Technology Corporation">
+            <Product type="2" id="2" name="PSM02-1 Slim Multi-Sensor" />
+        </Manufacturer>
+        <CommandClasses>
+            <CommandClass id="32" name="COMMAND_CLASS_BASIC" version="1" request_flags="4" after_mark="true" innif="true" mapping="48">
+                <Instance index="1" />
+            </CommandClass>
+            <CommandClass id="48" name="COMMAND_CLASS_SENSOR_BINARY" version="1" request_flags="4" create_vars="false" innif="true">
+                <Instance index="1" />
+                <Value type="bool" genre="user" instance="1" index="0" label="Motion Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
+                <Value type="bool" genre="user" instance="1" index="1" label="Door/Window Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+                <Value type="bool" genre="user" instance="1" index="2" label="Tamper Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+                <SensorMap index="2" type="8" />
+                <SensorMap index="1" type="10" />
+                <SensorMap index="0" type="12" />
+            </CommandClass>
+            <CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="5" innif="true">
+                <Instance index="1" />
+                <Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="F" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="71" />
+                <Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="2" />
+            </CommandClass>
+            <CommandClass id="112" name="COMMAND_CLASS_CONFIGURATION" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Value type="byte" genre="config" instance="1" index="2" label="2. Basic Set Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="255" value="255">
+                    <Help>Setting the BASIC command value to turn on the light. The 0xFF (255) means turn on the light. For dimmer equipment 1 to 100 means the light strength.</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="3" label="3. PIR Sensitivity" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="99" value="70">
+                    <Help>PIR sensitivity settings. 0 means disable the PIR motion. 1 means the lowest sensitivity. 99 means the highest sensitivity. High sensitivity means can detect long distance, but if there is more noise signal in the environment, it will re-trigger too frequently.</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="4" label="4. Light threshold" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="99">
+                    <Help>Setting the illummination threshold to turn on the light. When the event triggered and the environment illumination lower then the threshold, the device will turn on the light. 0 means turn off illumination detected function and never turn on the light. 1 means darkest. 99 means brightest. 100 means turn off illumination detected function. And always turn on the light. * Notice * in none test mode, only the value in 1 to 99 will enable the illumination detected function and update the illumination value.</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="5" label="5. Operation Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="127" value="0">
+                    <Help>Bit 0: 1 means security mode; 0 means home automation mode. Bit 1: 1 means enable test mode; 0 means disable test mode * Notice * Bit 0 and bit 1 will effect when the DIP Switch setting to program mode. If bit1 is enabled, the bit0 is useless. Bit 2: Reserved, always 1. Bit 3: Setting the temperature scale; 0: Fahrenheit, 1:Celsius Bit 4: Disable illumination report after event triggered. Bit 5: Disable temperature report after event triggered</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="6" label="6. Multi-Sensor Function Switch" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="127" value="4">
+                    <Help>Multi-Sensor Function switch. Using bit to control. Bit 0: Reserved, always 1. Bit 1: Disable PIR integrate Illumination. Bit 2: Reserved, always 1. Bit 3: Reserved. Bit 4: Reserved. Bit 5: Reserved. Bit 6: Enable temperature monitoring. When this bit enabled, the temperature changed 3 degree Fahrenheit, it will report. And also the temperature over 140 degree Fahrenheit, it will report every 64 seconds.</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="8" label="8. PIR re-detect interval time" units="8 sec" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="3" max="27" value="3">
+                    <Help>In the security mode, after the PIR report motion detected, setting the re-detect time. 8 seconds per tick, and minimum time is 24 seconds, default tick is 3 (24 seconds). Setting the suitable value to prevent received the trigger signal too frequency. Also can save the battery energy. * Notice * If this value bigger than the configuration setting NO. 9. There is a period after the light turned off and the PIR not detecting.</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="9" label="9. Turn Off Light Time" units="8 sec" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="4" max="127" value="4">
+                    <Help>After turn on the light, setting the delay time to turn off the light when the PIR motion is not detected. 8 seconds per tick, and minimum time is 32 seconds, default tick is 4 (32 seconds).</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="10" label="10. Auto Report Battery Time" units="30 min" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="127" value="12">
+                    <Help>The interval time for auto report the battery level. 30 minutes per tick and minimum time is 30 minutes, default tick is 12 (6 hours)</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="12" label="12. Auto Report Illumination Time" units="30 min" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="127" value="12">
+                    <Help>The interval time for auto report the illumination. 30 minutes per tick and minimum time is 30 minutes, default tick is 12 (6 hours)</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="13" label="13. Auto Report Temperature time" units="30 min" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="127" value="12">
+                    <Help>The interval time for auto report the temperature. 30 minutes per tick and minimum time is 30 minutes, default tick is 12 (6 hours)</Help>
+                </Value>
+            </CommandClass>
+            <CommandClass id="114" name="COMMAND_CLASS_MANUFACTURER_SPECIFIC" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+            </CommandClass>
+            <CommandClass id="128" name="COMMAND_CLASS_BATTERY" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="100" />
+            </CommandClass>
+            <CommandClass id="132" name="COMMAND_CLASS_WAKE_UP" version="2" request_flags="2" innif="true">
+                <Instance index="1" />
+                <Value type="int" genre="system" instance="1" index="0" label="Wake-up Interval" units="Seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="86400" />
+                <Value type="int" genre="system" instance="1" index="1" label="Minimum Wake-up Interval" units="Seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="0" />
+                <Value type="int" genre="system" instance="1" index="2" label="Maximum Wake-up Interval" units="Seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="0" />
+                <Value type="int" genre="system" instance="1" index="3" label="Default Wake-up Interval" units="Seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="0" />
+                <Value type="int" genre="system" instance="1" index="4" label="Wake-up Interval Step" units="Seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="0" />
+            </CommandClass>
+            <CommandClass id="133" name="COMMAND_CLASS_ASSOCIATION" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Associations num_groups="2">
+                    <Group index="1" max_associations="7" label="Report message" auto="true">
+                        <Node id="1" />
+                    </Group>
+                    <Group index="2" max_associations="7" label="Light control" auto="true">
+                        <Node id="1" />
+                    </Group>
+                </Associations>
+            </CommandClass>
+            <CommandClass id="134" name="COMMAND_CLASS_VERSION" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Value type="string" genre="system" instance="1" index="0" label="Library Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="6" />
+                <Value type="string" genre="system" instance="1" index="1" label="Protocol Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="3.41" />
+                <Value type="string" genre="system" instance="1" index="2" label="Application Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="1.00" />
+            </CommandClass>
+        </CommandClasses>
+    </Node>
+    <Node id="9" name="Sensor_Bath_Roo" location="" basic="4" generic="32" specific="1" type="Routing Binary Sensor" listening="false" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" query_stage="CacheLoad">
+        <Manufacturer id="13c" name="Philio Technology Corporation">
+            <Product type="2" id="2" name="PSM02-1 Slim Multi-Sensor" />
+        </Manufacturer>
+        <CommandClasses>
+            <CommandClass id="32" name="COMMAND_CLASS_BASIC" version="1" request_flags="4" after_mark="true" innif="true" mapping="48">
+                <Instance index="1" />
+            </CommandClass>
+            <CommandClass id="48" name="COMMAND_CLASS_SENSOR_BINARY" version="1" request_flags="4" create_vars="false" innif="true">
+                <Instance index="1" />
+                <Value type="bool" genre="user" instance="1" index="0" label="Motion Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
+                <Value type="bool" genre="user" instance="1" index="1" label="Door/Window Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+                <Value type="bool" genre="user" instance="1" index="2" label="Tamper Sensor" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+                <SensorMap index="2" type="8" />
+                <SensorMap index="1" type="10" />
+                <SensorMap index="0" type="12" />
+            </CommandClass>
+            <CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="5" innif="true">
+                <Instance index="1" />
+                <Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="F" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="78" />
+                <Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="7" />
+            </CommandClass>
+            <CommandClass id="112" name="COMMAND_CLASS_CONFIGURATION" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Value type="byte" genre="config" instance="1" index="2" label="2. Basic Set Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="255" value="255">
+                    <Help>Setting the BASIC command value to turn on the light. The 0xFF (255) means turn on the light. For dimmer equipment 1 to 100 means the light strength.</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="3" label="3. PIR Sensitivity" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="99" value="70">
+                    <Help>PIR sensitivity settings. 0 means disable the PIR motion. 1 means the lowest sensitivity. 99 means the highest sensitivity. High sensitivity means can detect long distance, but if there is more noise signal in the environment, it will re-trigger too frequently.</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="4" label="4. Light threshold" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="99">
+                    <Help>Setting the illummination threshold to turn on the light. When the event triggered and the environment illumination lower then the threshold, the device will turn on the light. 0 means turn off illumination detected function and never turn on the light. 1 means darkest. 99 means brightest. 100 means turn off illumination detected function. And always turn on the light. * Notice * in none test mode, only the value in 1 to 99 will enable the illumination detected function and update the illumination value.</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="5" label="5. Operation Mode" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="127" value="0">
+                    <Help>Bit 0: 1 means security mode; 0 means home automation mode. Bit 1: 1 means enable test mode; 0 means disable test mode * Notice * Bit 0 and bit 1 will effect when the DIP Switch setting to program mode. If bit1 is enabled, the bit0 is useless. Bit 2: Reserved, always 1. Bit 3: Setting the temperature scale; 0: Fahrenheit, 1:Celsius Bit 4: Disable illumination report after event triggered. Bit 5: Disable temperature report after event triggered</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="6" label="6. Multi-Sensor Function Switch" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="127" value="4">
+                    <Help>Multi-Sensor Function switch. Using bit to control. Bit 0: Reserved, always 1. Bit 1: Disable PIR integrate Illumination. Bit 2: Reserved, always 1. Bit 3: Reserved. Bit 4: Reserved. Bit 5: Reserved. Bit 6: Enable temperature monitoring. When this bit enabled, the temperature changed 3 degree Fahrenheit, it will report. And also the temperature over 140 degree Fahrenheit, it will report every 64 seconds.</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="8" label="8. PIR re-detect interval time" units="8 sec" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="3" max="27" value="3">
+                    <Help>In the security mode, after the PIR report motion detected, setting the re-detect time. 8 seconds per tick, and minimum time is 24 seconds, default tick is 3 (24 seconds). Setting the suitable value to prevent received the trigger signal too frequency. Also can save the battery energy. * Notice * If this value bigger than the configuration setting NO. 9. There is a period after the light turned off and the PIR not detecting.</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="9" label="9. Turn Off Light Time" units="8 sec" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="4" max="127" value="4">
+                    <Help>After turn on the light, setting the delay time to turn off the light when the PIR motion is not detected. 8 seconds per tick, and minimum time is 32 seconds, default tick is 4 (32 seconds).</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="10" label="10. Auto Report Battery Time" units="30 min" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="127" value="12">
+                    <Help>The interval time for auto report the battery level. 30 minutes per tick and minimum time is 30 minutes, default tick is 12 (6 hours)</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="12" label="12. Auto Report Illumination Time" units="30 min" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="127" value="12">
+                    <Help>The interval time for auto report the illumination. 30 minutes per tick and minimum time is 30 minutes, default tick is 12 (6 hours)</Help>
+                </Value>
+                <Value type="byte" genre="config" instance="1" index="13" label="13. Auto Report Temperature time" units="30 min" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="127" value="12">
+                    <Help>The interval time for auto report the temperature. 30 minutes per tick and minimum time is 30 minutes, default tick is 12 (6 hours)</Help>
+                </Value>
+            </CommandClass>
+            <CommandClass id="114" name="COMMAND_CLASS_MANUFACTURER_SPECIFIC" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+            </CommandClass>
+            <CommandClass id="128" name="COMMAND_CLASS_BATTERY" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="100" />
+            </CommandClass>
+            <CommandClass id="132" name="COMMAND_CLASS_WAKE_UP" version="2" request_flags="2" innif="true">
+                <Instance index="1" />
+                <Value type="int" genre="system" instance="1" index="0" label="Wake-up Interval" units="Seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="86400" />
+                <Value type="int" genre="system" instance="1" index="1" label="Minimum Wake-up Interval" units="Seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="1800" />
+                <Value type="int" genre="system" instance="1" index="2" label="Maximum Wake-up Interval" units="Seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="432000" />
+                <Value type="int" genre="system" instance="1" index="3" label="Default Wake-up Interval" units="Seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="86400" />
+                <Value type="int" genre="system" instance="1" index="4" label="Wake-up Interval Step" units="Seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="1800" />
+            </CommandClass>
+            <CommandClass id="133" name="COMMAND_CLASS_ASSOCIATION" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Associations num_groups="2">
+                    <Group index="1" max_associations="7" label="Report message" auto="true">
+                        <Node id="1" />
+                    </Group>
+                    <Group index="2" max_associations="7" label="Light control" auto="true">
+                        <Node id="1" />
+                    </Group>
+                </Associations>
+            </CommandClass>
+            <CommandClass id="134" name="COMMAND_CLASS_VERSION" version="1" request_flags="4" innif="true">
+                <Instance index="1" />
+                <Value type="string" genre="system" instance="1" index="0" label="Library Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="6" />
+                <Value type="string" genre="system" instance="1" index="1" label="Protocol Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="3.41" />
+                <Value type="string" genre="system" instance="1" index="2" label="Application Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="1.00" />
             </CommandClass>
         </CommandClasses>
     </Node>
